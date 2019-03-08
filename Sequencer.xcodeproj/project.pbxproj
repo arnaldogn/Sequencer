@@ -13,6 +13,24 @@
 		233CF9B5223165130047BD4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233CF9B4223165130047BD4E /* Assets.xcassets */; };
 		233CF9B8223165130047BD4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233CF9B6223165130047BD4E /* LaunchScreen.storyboard */; };
 		233CF9C3223165130047BD4E /* SequencerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9C2223165130047BD4E /* SequencerTests.swift */; };
+		233CF9CE22316B4A0047BD4E /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9CD22316B4A0047BD4E /* PlayerView.swift */; };
+		233CF9D6223172050047BD4E /* A3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 233CF9D0223172040047BD4E /* A3.wav */; };
+		233CF9D7223172050047BD4E /* A1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 233CF9D1223172040047BD4E /* A1.wav */; };
+		233CF9D8223172050047BD4E /* A2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 233CF9D2223172040047BD4E /* A2.wav */; };
+		233CF9D9223172050047BD4E /* B1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 233CF9D3223172040047BD4E /* B1.wav */; };
+		233CF9DA223172050047BD4E /* B2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 233CF9D4223172040047BD4E /* B2.wav */; };
+		233CF9DB223172050047BD4E /* B3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 233CF9D5223172050047BD4E /* B3.wav */; };
+		233CF9DD22319CB30047BD4E /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9DC22319CB30047BD4E /* CustomProgressView.swift */; };
+		233CF9DF2231A5410047BD4E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9DE2231A5410047BD4E /* UIColor+Extensions.swift */; };
+		233CF9E12231AA450047BD4E /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9E02231AA450047BD4E /* CALayer+Extensions.swift */; };
+		233CF9E32231AD510047BD4E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9E22231AD510047BD4E /* UIView+Extensions.swift */; };
+		233CF9E52232C17B0047BD4E /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9E42232C17B0047BD4E /* AudioPlayer.swift */; };
+		233CF9E72232D3580047BD4E /* WavePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9E62232D3580047BD4E /* WavePanelView.swift */; };
+		233CF9E92232EAAA0047BD4E /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9E82232EAAA0047BD4E /* PlayerViewModel.swift */; };
+		233CF9EB2232EF230047BD4E /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9EA2232EF230047BD4E /* TimeInterval+Extensions.swift */; };
+		233CF9ED2232F8790047BD4E /* AudioPlayer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF9EC2232F8790047BD4E /* AudioPlayer1.swift */; };
+		B2BAE1394F55F104CDF252BA /* Pods_Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5440867587FA88D19A30BA1 /* Pods_Sequencer.framework */; };
+		E5AF205FBAE28ABDB76ECCD6 /* Pods_SequencerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B51087EC903C7E5E9F66E4 /* Pods_SequencerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +54,28 @@
 		233CF9BE223165130047BD4E /* SequencerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SequencerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		233CF9C2223165130047BD4E /* SequencerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequencerTests.swift; sourceTree = "<group>"; };
 		233CF9C4223165130047BD4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		233CF9CD22316B4A0047BD4E /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		233CF9D0223172040047BD4E /* A3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A3.wav; sourceTree = "<group>"; };
+		233CF9D1223172040047BD4E /* A1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A1.wav; sourceTree = "<group>"; };
+		233CF9D2223172040047BD4E /* A2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A2.wav; sourceTree = "<group>"; };
+		233CF9D3223172040047BD4E /* B1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B1.wav; sourceTree = "<group>"; };
+		233CF9D4223172040047BD4E /* B2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B2.wav; sourceTree = "<group>"; };
+		233CF9D5223172050047BD4E /* B3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B3.wav; sourceTree = "<group>"; };
+		233CF9DC22319CB30047BD4E /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		233CF9DE2231A5410047BD4E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		233CF9E02231AA450047BD4E /* CALayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extensions.swift"; sourceTree = "<group>"; };
+		233CF9E22231AD510047BD4E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		233CF9E42232C17B0047BD4E /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		233CF9E62232D3580047BD4E /* WavePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavePanelView.swift; sourceTree = "<group>"; };
+		233CF9E82232EAAA0047BD4E /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		233CF9EA2232EF230047BD4E /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		233CF9EC2232F8790047BD4E /* AudioPlayer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer1.swift; sourceTree = "<group>"; };
+		336F256FC3EA3F1F10F222C8 /* Pods-Sequencer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sequencer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sequencer/Pods-Sequencer.release.xcconfig"; sourceTree = "<group>"; };
+		70D0BA7C45F7C6E732AF6A39 /* Pods-Sequencer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sequencer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sequencer/Pods-Sequencer.debug.xcconfig"; sourceTree = "<group>"; };
+		74B51087EC903C7E5E9F66E4 /* Pods_SequencerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SequencerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A4E96956B77071A6893809 /* Pods-SequencerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SequencerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SequencerTests/Pods-SequencerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5440867587FA88D19A30BA1 /* Pods_Sequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BAAE7C535F69E7296321BC /* Pods-SequencerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SequencerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SequencerTests/Pods-SequencerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BAE1394F55F104CDF252BA /* Pods_Sequencer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AF205FBAE28ABDB76ECCD6 /* Pods_SequencerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +104,8 @@
 				233CF9AC223165110047BD4E /* Sequencer */,
 				233CF9C1223165130047BD4E /* SequencerTests */,
 				233CF9AB223165110047BD4E /* Products */,
+				3ABC5046E5E4963CA6977D1E /* Pods */,
+				8814E9AB33B6DFC61452A4C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +123,21 @@
 			children = (
 				233CF9AD223165110047BD4E /* AppDelegate.swift */,
 				233CF9AF223165110047BD4E /* ViewController.swift */,
+				233CF9CD22316B4A0047BD4E /* PlayerView.swift */,
+				233CF9E82232EAAA0047BD4E /* PlayerViewModel.swift */,
+				233CF9E62232D3580047BD4E /* WavePanelView.swift */,
+				233CF9E42232C17B0047BD4E /* AudioPlayer.swift */,
+				233CF9EC2232F8790047BD4E /* AudioPlayer1.swift */,
+				233CF9E02231AA450047BD4E /* CALayer+Extensions.swift */,
+				233CF9EA2232EF230047BD4E /* TimeInterval+Extensions.swift */,
+				233CF9E22231AD510047BD4E /* UIView+Extensions.swift */,
+				233CF9DE2231A5410047BD4E /* UIColor+Extensions.swift */,
+				233CF9DC22319CB30047BD4E /* CustomProgressView.swift */,
 				233CF9B1223165110047BD4E /* Main.storyboard */,
 				233CF9B4223165130047BD4E /* Assets.xcassets */,
 				233CF9B6223165130047BD4E /* LaunchScreen.storyboard */,
 				233CF9B9223165130047BD4E /* Info.plist */,
+				233CF9CF223171CB0047BD4E /* Resources */,
 			);
 			path = Sequencer;
 			sourceTree = "<group>";
@@ -96,6 +151,39 @@
 			path = SequencerTests;
 			sourceTree = "<group>";
 		};
+		233CF9CF223171CB0047BD4E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				233CF9D1223172040047BD4E /* A1.wav */,
+				233CF9D2223172040047BD4E /* A2.wav */,
+				233CF9D0223172040047BD4E /* A3.wav */,
+				233CF9D3223172040047BD4E /* B1.wav */,
+				233CF9D4223172040047BD4E /* B2.wav */,
+				233CF9D5223172050047BD4E /* B3.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3ABC5046E5E4963CA6977D1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70D0BA7C45F7C6E732AF6A39 /* Pods-Sequencer.debug.xcconfig */,
+				336F256FC3EA3F1F10F222C8 /* Pods-Sequencer.release.xcconfig */,
+				B0A4E96956B77071A6893809 /* Pods-SequencerTests.debug.xcconfig */,
+				F2BAAE7C535F69E7296321BC /* Pods-SequencerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8814E9AB33B6DFC61452A4C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5440867587FA88D19A30BA1 /* Pods_Sequencer.framework */,
+				74B51087EC903C7E5E9F66E4 /* Pods_SequencerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 233CF9C7223165130047BD4E /* Build configuration list for PBXNativeTarget "Sequencer" */;
 			buildPhases = (
+				8867971FEEC59A72291E231C /* [CP] Check Pods Manifest.lock */,
 				233CF9A6223165110047BD4E /* Sources */,
 				233CF9A7223165110047BD4E /* Frameworks */,
 				233CF9A8223165110047BD4E /* Resources */,
+				B8B0782D9844B1789F052330 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 233CF9CA223165130047BD4E /* Build configuration list for PBXNativeTarget "SequencerTests" */;
 			buildPhases = (
+				D1237C5C701AF3F2C13CC59C /* [CP] Check Pods Manifest.lock */,
 				233CF9BA223165130047BD4E /* Sources */,
 				233CF9BB223165130047BD4E /* Frameworks */,
 				233CF9BC223165130047BD4E /* Resources */,
@@ -177,9 +268,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233CF9D9223172050047BD4E /* B1.wav in Resources */,
+				233CF9D7223172050047BD4E /* A1.wav in Resources */,
 				233CF9B8223165130047BD4E /* LaunchScreen.storyboard in Resources */,
 				233CF9B5223165130047BD4E /* Assets.xcassets in Resources */,
+				233CF9D6223172050047BD4E /* A3.wav in Resources */,
+				233CF9DB223172050047BD4E /* B3.wav in Resources */,
 				233CF9B3223165110047BD4E /* Main.storyboard in Resources */,
+				233CF9DA223172050047BD4E /* B2.wav in Resources */,
+				233CF9D8223172050047BD4E /* A2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,12 +289,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8867971FEEC59A72291E231C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sequencer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8B0782D9844B1789F052330 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sequencer/Pods-Sequencer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sequencer/Pods-Sequencer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1237C5C701AF3F2C13CC59C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SequencerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		233CF9A6223165110047BD4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233CF9E72232D3580047BD4E /* WavePanelView.swift in Sources */,
+				233CF9E92232EAAA0047BD4E /* PlayerViewModel.swift in Sources */,
+				233CF9E32231AD510047BD4E /* UIView+Extensions.swift in Sources */,
+				233CF9CE22316B4A0047BD4E /* PlayerView.swift in Sources */,
+				233CF9DF2231A5410047BD4E /* UIColor+Extensions.swift in Sources */,
+				233CF9ED2232F8790047BD4E /* AudioPlayer1.swift in Sources */,
+				233CF9E52232C17B0047BD4E /* AudioPlayer.swift in Sources */,
 				233CF9B0223165110047BD4E /* ViewController.swift in Sources */,
+				233CF9EB2232EF230047BD4E /* TimeInterval+Extensions.swift in Sources */,
+				233CF9E12231AA450047BD4E /* CALayer+Extensions.swift in Sources */,
+				233CF9DD22319CB30047BD4E /* CustomProgressView.swift in Sources */,
 				233CF9AE223165110047BD4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +534,7 @@
 		};
 		233CF9C8223165130047BD4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D0BA7C45F7C6E732AF6A39 /* Pods-Sequencer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +553,7 @@
 		};
 		233CF9C9223165130047BD4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336F256FC3EA3F1F10F222C8 /* Pods-Sequencer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +572,7 @@
 		};
 		233CF9CB223165130047BD4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A4E96956B77071A6893809 /* Pods-SequencerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +594,7 @@
 		};
 		233CF9CC223165130047BD4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BAAE7C535F69E7296321BC /* Pods-SequencerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
