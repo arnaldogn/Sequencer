@@ -77,21 +77,29 @@ struct Tempo {
 
 class Test2 {
     var audioUrl = Bundle.main.url(forResource: "A1", withExtension: "wav")
-    var engine = AVAudioEngine()
-    lazy var offsetTime = engine.outputNode.lastRenderTime 
+    var offsetTime: AVAudioTime?
+    var engine = AVAudioEngine() {
+        didSet {
+            offsetTime = engine.outputNode.lastRenderTime
+        }
+    }
     let player = AVAudioPlayerNode()
     let myTempo = Tempo(bpm: 120)
     
-    
     var currentPositionInSeconds: TimeInterval {
-        
         get {
-            guard let lastRenderTime = engine.outputNode.lastRenderTime else { return 0 }
+            guard let lastRenderTime = engine.outputNode.lastRenderTime,
+            let offsetTime = offsetTime
+            else { return 0 }
             let frames = lastRenderTime.sampleTime - offsetTime.sampleTime
             return Double(frames) / offsetTime.sampleRate
         }
-        
-        
+    }
+    
+    var currentPositionInBeats: TimeInterval {
+        get {
+            return currentPositionInSeconds/myTempo.seconds()
+        }
     }
     
     init() {
@@ -104,9 +112,16 @@ class Test2 {
         
         engine.connect(player, to: engine.mainMixerNode, format: audioFile.processingFormat)
         player.scheduleFile(audioFile, at: nil) {
-            print("algo")
+            let position = self.currentPositionInBeats
+            let bars = Int(floor(position / 4))
+            
+            let beats = Int(floor(position.truncatingRemainder(dividingBy: 4)))
+            print("Algo \(bars).\(beats)")
         }
         try! engine.start()
+        
+       
+        
         
         
     }
