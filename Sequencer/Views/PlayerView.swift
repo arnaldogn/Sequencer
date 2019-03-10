@@ -10,9 +10,10 @@ import UIKit
 import SnapKit
 
 protocol PlayerViewDelegate: class {
-    func play()
-    func playLongPressed()
-    func fastForwardPressed(sender: PlayerView.Panel)
+    func didTapPlay()
+    func didPlayLongPressed()
+    func didTapFastForward(sender: PlayerView.Panel)
+    func didTapRepeat()
 }
 
 class PlayerView: UIView {
@@ -24,6 +25,7 @@ class PlayerView: UIView {
     @IBOutlet var rightLed: UIView!
     @IBOutlet var timeLbl: UILabel!
     @IBOutlet var playBtn: UIButton!
+    @IBOutlet var repeatBtn: UIButton!
     weak var delegate: PlayerViewDelegate?
     var longPressRecognizer: UILongPressGestureRecognizer?
     var leftPanel = WavePanelView(images: ["A1", "A2", "A3"])
@@ -31,13 +33,13 @@ class PlayerView: UIView {
     
     @IBAction func playBtnTapped(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
-        delegate?.play()
+        delegate?.didTapPlay()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         if longPressRecognizer == nil {
-            longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(playLongPressed))
+            longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(didPlayLongPressed))
             guard let longPressRecognizer = longPressRecognizer else { return }
             playBtn.addGestureRecognizer(longPressRecognizer)
             setupConstraints()
@@ -52,12 +54,12 @@ class PlayerView: UIView {
     func setupViews() {
         leftPanel.delegate = self
         rightPanel.delegate = self
+        backgroundColor = .customLightGray
         addSubviews(leftPanel,
                     rightPanel)
     }
     
     func setupConstraints() {
-        leftPanel.backgroundColor = .red
         leftPanel.snp.makeConstraints { (make) in
             make.top.leading.equalToSuperview()
             make.bottom.equalTo(playBtn.snp.top).offset(-50)
@@ -69,7 +71,8 @@ class PlayerView: UIView {
         }
     }
     
-    @objc func playLongPressed() {
+    @objc func didPlayLongPressed() {
+        delegate?.didPlayLongPressed()
     }
     
     func blinkLed(_ panel: Panel) {
@@ -80,18 +83,25 @@ class PlayerView: UIView {
             rightLed.blink()
         }
     }
+    
     @objc func fastForwardTapped(_ sender: UIButton) {
         guard let btnTag = Panel(rawValue: sender.tag) else { return }
-        delegate?.fastForwardPressed(sender: btnTag)
+        delegate?.didTapFastForward(sender: btnTag)
     }
+    
     @IBAction func repeatTapped(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        delegate?.didTapRepeat()
+    }
+    
+    func panel(from tag: Panel) -> WavePanelView {
+        return tag == .left ? leftPanel : rightPanel
     }
 }
 
 extension PlayerView: WavePanelViewDelegate {
     func didFastForward(panel: WavePanelView) {
-        let tag: Panel = panel.isEqual(leftPanel) ? .left : .right
-        delegate?.fastForwardPressed(sender: tag)
+        delegate?.didTapFastForward(sender: panel.isEqual(leftPanel) ? .left : .right)
     }
 }
 

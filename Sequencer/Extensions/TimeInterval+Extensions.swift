@@ -9,9 +9,9 @@
 import Foundation
 
 extension TimeInterval {
-    func toMinutes() -> Int {
-        let ti = NSInteger(self)
-        let minutes = (ti / 60) % 60
+    func toMinutes() -> Float {
+        let ti = Float(self)
+        let minutes = ti / 60
         return minutes
     }
 }

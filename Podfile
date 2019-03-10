@@ -6,7 +6,8 @@ target 'Sequencer' do
   use_frameworks!
 
   # Pods for Sequencer
-  pod 'SnapKit', '~> 4.0.0'
+    pod 'SnapKit', '~> 4.0.0'
+    pod 'Swinject', '~> 2.4.0'
   target 'SequencerTests' do
     inherit! :search_paths
     # Pods for testing

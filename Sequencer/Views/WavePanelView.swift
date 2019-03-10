@@ -66,14 +66,14 @@ class WavePanelView: UIView {
     func setupConstraints() {
         waveForm.snp.makeConstraints { (make) in
             make.leading.trailing.equalToSuperview()
-            make.top.equalTo(10)
+            make.top.equalTo(50)
             make.height.equalTo(100)
         }
         progressView.snp.makeConstraints { (make) in
             make.leading.trailing.centerY.equalTo(waveForm)
         }
         fastForwardBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(waveForm.snp.bottom)
+            make.top.equalTo(waveForm.snp.bottom).offset(20)
             make.centerX.equalToSuperview()
             make.height.width.equalTo(40)
         }

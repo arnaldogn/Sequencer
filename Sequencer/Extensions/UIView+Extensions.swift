@@ -9,9 +9,11 @@
 import UIKit
 
 extension UIView {
-    func blink() {
-        UIView.animate(withDuration: 1.0, delay: 1.0, options: [.curveLinear, .repeat, .autoreverse], animations: {
-            self.alpha = 0.0
+    func blink(color: UIColor = .yellow) {
+        UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseInOut, .autoreverse], animations: {
+            self.backgroundColor = color
+        }, completion: { _ in
+            self.backgroundColor = .white
         })
     }
     
